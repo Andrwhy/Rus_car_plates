@@ -64,10 +64,9 @@ flowchart LR
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-Copy-Item .env.example .env
 ```
 
-Создайте бота у [@BotFather](https://t.me/BotFather), вставьте токен в `.env` и обучите или поместите локально веса моделей. Файлы с весами, датасеты, токены и логи намеренно не хранятся в Git.
+Создайте локальный файл `.env`, получите токен у [@BotFather](https://t.me/BotFather) и задайте как минимум `TELEGRAM_BOT_TOKEN`. Остальные параметры описаны в таблице ниже. Файлы с весами, датасеты, токены и логи намеренно не хранятся в Git.
 
 ```powershell
 python -m app.bot

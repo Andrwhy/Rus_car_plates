@@ -24,7 +24,7 @@ def load_settings() -> Settings:
     token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     if not token:
         raise RuntimeError(
-            "TELEGRAM_BOT_TOKEN is missing. Copy .env.example to .env and add the token from @BotFather."
+            "TELEGRAM_BOT_TOKEN is missing. Create .env and add the token from @BotFather."
         )
 
     model_path = Path(os.getenv("MODEL_PATH", "models/license_plate_detector.pt"))
