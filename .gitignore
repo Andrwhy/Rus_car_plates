@@ -1,0 +1,17 @@
+# Secrets and local settings
+.env
+
+# Datasets and model artefacts are large and should stay local.
+data/
+models/
+runs/
+*.pt
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Bot input/output files
+runtime/

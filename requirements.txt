@@ -1,0 +1,10 @@
+# Python 3.11-3.13 is recommended for the broadest ML wheel support.
+ultralytics>=8.3.0
+python-telegram-bot>=22.0
+python-dotenv>=1.0.1
+opencv-python>=4.10.0
+numpy>=2.0.0
+# Compatibility runtime for machines where AVX2 is not exposed to Python.
+polars[rtcompat]>=1.43.2
+# Optional at bot runtime; enables character recognition after plate detection.
+easyocr>=1.7.2
